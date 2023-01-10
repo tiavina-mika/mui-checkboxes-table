@@ -100,7 +100,7 @@ const RightsFields: FC = () => {
                 <TableCell key={item.value + index}>
                   <Checkbox
                     checked={item.rights[key]}
-                    onChange={handleChecked(item.value, key)}
+                    onChange={handleChecked(item.value, key as keyof Right)}
                   />
                 </TableCell>
               ))}
